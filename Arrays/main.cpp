@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 void main()
@@ -6,8 +6,8 @@ void main()
 	setlocale(LC_ALL, "");
 	const int SIZE = 5;
 	int arr[SIZE];
-	//arr[3] = 123;
-	cout << "Ââåäèòå çíà÷åíèÿ ýëåìåíòîâ ìàññèâà: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 5 ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
+
 	for (int i = 0; i < SIZE; i++)
 	{
 		cin >> arr[i];
@@ -18,18 +18,20 @@ void main()
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
+
 	for (int i = SIZE-1; i >= 0; i--)
 	{
 		cout << arr[i] << "\t";
 	}
 	cout << endl;
 	int sum=0;
+
 	for (int i = 0; i < SIZE; i++)
 	{
 		sum += arr[i];
 	}
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà = " << sum << endl;
-	cout << "Ñóììà ñðåäíåå-ôðèôìåòè÷åñêîå ýëåìåíòîâ ìàññèâà: " << sum / SIZE << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° = " << sum << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÑ€ÐµÐ´Ð½ÐµÐµ-Ñ„Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << sum / SIZE << endl;
 
 	int min, max;
 	min = max = arr[0];
@@ -38,6 +40,6 @@ void main()
 		if (arr[i] < min)min = arr[i];
 		if (arr[i] > max)max = arr[i];
 	}
-	cout << "Ìèíèìàëüíîå çíà÷åíèå â ìàññèâå: " << min << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå: " << max << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << min << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ: " << max << endl;
 }
