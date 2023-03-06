@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 //#define DEC_2_BIN
 #define DEC_2_HEX
@@ -7,7 +7,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 	int decimal;
-	cout << "Ââåäèòå äåñÿòè÷íîå ÷èñëî: "; cin >> decimal;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´ÐµÑÑÑ‚Ð¸Ñ‡Ð½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾: "; cin >> decimal;
 #ifdef DEC_2_BIN
 	const int n = 32;
 	bool bin[n] = {};

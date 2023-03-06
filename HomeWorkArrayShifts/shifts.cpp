@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 //#define Shifts1
 #define Shifts2
@@ -7,7 +7,7 @@ void main()
 	setlocale(LC_ALL, "");
 	const int n = 10;
 	int arr[n] = { 1,2,3,4,5,6,7,8,9,10 }, NumbOfShifts;
-	cout << "Ââåäèòå êîë-âî ñäâèãîâ ìàññèâà: "; cin >> NumbOfShifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°: "; cin >> NumbOfShifts;
 #ifdef Shifts1
 	for (int i = 0; i < n; i++)
 	{
